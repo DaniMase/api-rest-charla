@@ -2,8 +2,8 @@ NODE API REST
 =============
 
 - [Endpoints](#endpoints)
-	- [Products endpoints](#products endpoints)
-	- [Warehouse endpoints](#warehouse endpoints)
+	- [Products endpoints](#products-endpoints)
+	- [Warehouse endpoints](#warehouse-endpoints)
 	
 
 ## Endpoints
