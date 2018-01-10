@@ -1,19 +1,19 @@
 NODE API REST
 =============
-
+- [Install](#install)
 - [Endpoints](#endpoints)
 	- [Products endpoints](#products-endpoints)
 	- [Warehouse endpoints](#warehouse-endpoints)
 
 ## Install
 
-Use the command `git clone` inside the selected directory to clone the project. 
+Use the command `git clone` inside the selected directory to clone the project.
 
 Install all package using `npm install`.
 
-Run the project using `npm start`
+Run the project using `npm start`.
 
-Make the calls to `localhost:8080`
+Make the HTTP calls to `localhost:8080` endpoint.
 
 ## Endpoints
 ### Products endpoints
