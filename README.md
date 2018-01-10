@@ -2,16 +2,15 @@ NODE API REST
 =============
 
 - [Endpoints](#endpoints)
-	- [Meta](#meta)
+	- [Products endpoints](#Products endpoints)
 	- [API overview](#api-overview)
 	
 
-##Endpoints
+## Endpoints
 ### Products endpoints
 `GET /products` :
 
-    Response : 
-        `
+    Response :
         {  
            "products":[  
               {  
@@ -80,12 +79,12 @@ NODE API REST
               }
            ]
         }
-        `
+        
     
 `GET /products/:id` :
 
     Response:
-    `
+    
         {
             "product": {
                 "_id": "5a56490fc6e3b72ad9fc94d3",
@@ -104,11 +103,11 @@ NODE API REST
                 "lastUpdate": 1515604335789
             }
         }
-    `
+    
 `POST /products`
     
     Request:
-    `
+    
     {
     	"name": "Producto 4",
     	"stock": 10,
@@ -118,7 +117,7 @@ NODE API REST
     `
     
     Response:
-    `
+    
     {
         "__v": 0,
         "name": "Producto 4",
@@ -128,21 +127,21 @@ NODE API REST
         "_id": "5a56491fc6e3b72ad9fc94d6",
         "lastUpdate": 1515604177439
     }
-    `
+    
 `PATCH /products/:id`
     
     Request:
-    `
+    
     {
     	"name": "Producto 7",
     	"stock": 200,
     	"warehouse": "5a563bed1dae9c1986512129",
     	"provider": "Proveedor 2000"
     }
-    `
+    
     
     Response:
-    `
+    
     {
         "_id": "5a56491fc6e3b72ad9fc94d6",
         "name": "Producto 4",
@@ -152,11 +151,11 @@ NODE API REST
         "__v": 0,
         "lastUpdate": 1515604827268
     }
-    `
+    
 `DELETE /products/:id`
     
     Response:
-    `
+    
     {
         "_id": "5a56490fc6e3b72ad9fc94d3",
         "name": "Producto 1",
@@ -166,4 +165,4 @@ NODE API REST
         "__v": 0,
         "lastUpdate": 1515604335789
     }
-    `
+    
