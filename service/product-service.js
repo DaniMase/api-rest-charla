@@ -123,7 +123,7 @@ let updateProduct = (req, res) => {
             return res.status(404).send();
         }
 
-        res.send({prod});
+        res.send(prod);
     }).catch((e) => {
         res.status(400).send(e);
     });
