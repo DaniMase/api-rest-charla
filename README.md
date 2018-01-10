@@ -2,8 +2,8 @@ NODE API REST
 =============
 
 - [Endpoints](#endpoints)
-	- [Products endpoints](#Products endpoints)
-	- [API overview](#api-overview)
+	- [Products endpoints](#products endpoints)
+	- [Warehouse endpoints](#warehouse endpoints)
 	
 
 ## Endpoints
@@ -166,3 +166,4 @@ NODE API REST
         "lastUpdate": 1515604335789
     }
     
+### Warehouse endpoints
