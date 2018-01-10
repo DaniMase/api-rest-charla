@@ -11,7 +11,7 @@ const {ObjectID} = require('mongodb');
  */
 let findAllWarehouses = (req, res) => {
     Warehouse.find().then((warehouse) => {
-        res.send({warehouse});
+        res.send(warehouse);
     }).catch((err) => {
         res.status(400).send(err);
     });
@@ -34,7 +34,7 @@ let findWarehouseById = (req, res) => {
         if (!warehouse) {
             return res.status(404).send();
         }
-        res.send({warehouse});
+        res.send(warehouse);
     }).catch((err) => {
         res.status(400).send(err);
     });

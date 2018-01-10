@@ -167,3 +167,96 @@ NODE API REST
     }
     
 ### Warehouse endpoints
+`GET /warehouse` :
+
+    Response :
+        [
+            {
+                "_id": "5a56493fc6e3b72ad9fc94d7",
+                "name": "SP000",
+                "capacity": 1000,
+                "country": "spain",
+                "__v": 0,
+                "lastUpdate": 1515604177462
+            },
+            {
+                "_id": "5a564942c6e3b72ad9fc94d8",
+                "name": "SP001",
+                "capacity": 1000,
+                "country": "spain",
+                "__v": 0,
+                "lastUpdate": 1515604177462
+            }
+        ]
+        
+    
+`GET /warehouse/:id` :
+
+    Response:
+    
+        {
+            "_id": "5a56493fc6e3b72ad9fc94d7",
+            "name": "SP000",
+            "capacity": 1000,
+            "country": "spain",
+            "__v": 0,
+            "lastUpdate": 1515604177462
+        }
+    
+`POST /warehouse`
+    
+    Request:
+    
+    {
+    	"name": "SP001",
+    	"capacity": 1000,
+    	"country": "Spain"
+    }
+    
+    
+    Response:
+    
+    {
+        "__v": 0,
+        "name": "SP001",
+        "capacity": 1000,
+        "country": "spain",
+        "_id": "5a564942c6e3b72ad9fc94d8",
+        "lastUpdate": 1515604177462
+    }
+    
+`PATCH /warehouse/:id`
+    
+    Request:
+    
+    {
+        "capacity": 6000
+    }
+    
+    
+    Response:
+    
+    {
+        "warehouse": {
+            "_id": "5a56493fc6e3b72ad9fc94d7",
+            "name": "SP000",
+            "capacity": 6000,
+            "country": "spain",
+            "__v": 0,
+            "lastUpdate": 1515605557305
+        }
+    }
+    
+`DELETE /warehouse/:id`
+    
+    Response:
+    
+    {
+        "_id": "5a56493fc6e3b72ad9fc94d7",
+        "name": "SP000",
+        "capacity": 6000,
+        "country": "spain",
+        "__v": 0,
+        "lastUpdate": 1515605557305
+    }
+    
