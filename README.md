@@ -7,7 +7,7 @@ NODE API REST
 
 ## Install
 
-Use the command `git clone` inside the selected directory to clone the project.
+Clone the project inside the selected directory.
 
 Install all package using `npm install`.
 

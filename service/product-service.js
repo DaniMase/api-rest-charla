@@ -16,10 +16,10 @@ let findAllProducts = (req, res) => {
         Warehouse.populate(products, {path: 'warehouse'}).then((products) => {
             res.send({products});
         }).catch((err) => {
-            res.status(400).send();
+            res.status(400).send(err);
         });
     }).catch((err) => {
-        res.status(400).send();
+        res.status(400).send(err);
     });
 };
 
@@ -43,7 +43,7 @@ let findProductById = (req, res) => {
         Warehouse.populate(product, {path: 'warehouse'}).then((product) => {
             res.send({product});
         }).catch((err) => {
-            res.status(400).send();
+            res.status(400).send(err);
         });
     }).catch((err) => {
         res.status(400).send(err);
