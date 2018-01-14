@@ -1,3 +1,5 @@
+require('./config/config');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -8,6 +10,8 @@ const path = require('path');
 const {products_router} = require('./routes/product-routes');
 const {warehouse_router} = require('./routes/warehouse-routes');
 const {user_routes} = require('./routes/user-routes');
+const {login_routes} = require('./routes/login-route');
+
 
 let app = express();
 const port = process.env.PORT || 8080;
@@ -22,6 +26,7 @@ app.use(bodyParser.json());
 app.use(products_router);
 app.use(warehouse_router);
 app.use(user_routes);
+app.use(login_routes);
 
 //Config to start the server
 app.listen(port, () => {
