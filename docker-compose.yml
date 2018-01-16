@@ -5,6 +5,8 @@ services:
     image: "danielmasegosa/api-rest-charla"
     ports:
      - "8000:8080"
+#    expose:
+#      - "1337"
     links:
       - mongo
       - untitled2
