@@ -1,13 +1,20 @@
 version: '3'
 services:
+
   api-rest-charla:
     image: "danielmasegosa/api-rest-charla"
     ports:
-     - "8080:8080"
+     - "8000:8080"
     links:
       - mongo
+      - untitled2
     depends_on:
       - mongo
+    environment:
+      - MONGODB_PRODUCTS_URI=mongodb://mongo:27017/Products
+      - MONGODB_WAREHOUSE_URI=mongodb://mongo:27017/Warehouses
+      - MONGODB_USER_URI=mongodb://mongo:27017/Users
+      - JWT_SECRET=939a4e564cca486794735a46d8a3cf3e
 
   mongo:
     image: "mongo"
