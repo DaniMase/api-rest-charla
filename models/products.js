@@ -24,6 +24,8 @@ let ProductSchema = mongoose.Schema({
         type: Number,
         default: new Date().getTime()
     }
+},{
+    usePushEach: true
 });
 
 module.exports = {ProductSchema};

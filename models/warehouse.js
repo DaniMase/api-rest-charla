@@ -26,6 +26,9 @@ let WarehouseSchema = mongoose.Schema({
     },
     {
         versionKey: false
+    },
+    {
+        usePushEach: true
     }
 );
 
