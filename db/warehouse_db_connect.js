@@ -12,6 +12,7 @@ const warehouse_conn = mongoose.createConnection(process.env.MONGODB_WAREHOUSE_U
 
 const Warehouse = warehouse_conn.model('Warehouse', WarehouseSchema);
 
+//Quiero generar un conflicto
 //lo habré generado?
 
 module.exports = {Warehouse};
