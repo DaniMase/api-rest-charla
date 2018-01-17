@@ -1,4 +1,4 @@
-FROM node:8.9.4
+FROM node:carbon
 
 # Create app directory
 WORKDIR /api_rest_node

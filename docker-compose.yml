@@ -2,7 +2,7 @@ version: '3'
 services:
 
   api-rest-charla:
-    image: "danielmasegosa/api-rest-charla"
+    image: danielmasegosa/api-rest-charla
     ports:
      - "8080:8080"
     links:
@@ -16,12 +16,12 @@ services:
       - JWT_SECRET=939a4e564cca486794735a46d8a3cf3e
 
   mongo:
-    image: "mongo"
+    image: mongo:latest
     ports:
       - "27017:27017"
 
   mongo-client:
-    image: "mongoclient/mongoclient"
+    image: mongoclient/mongoclient
     ports:
       - "3000:3000"
     depends_on:
