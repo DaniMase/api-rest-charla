@@ -1,7 +1,7 @@
 version: '3'
 services:
   api-rest-charla:
-    image: danielmasegosa/api-rest-charla:latest
+    image: danielmasegosa/node_api_rest
     ports:
      - "8080:8080"
     links:
@@ -14,7 +14,7 @@ services:
       - MONGODB_USER_URI=mongodb://mongo:27017/Users
       - JWT_SECRET=939a4e564cca486794735a46d8a3cf3e
   mongo:
-    image: mongo:latest
+    image: mongo:3.4
     ports:
       - "27017:27017"
 
