@@ -6,7 +6,7 @@ const {WarehouseSchema} = require('../models/warehouse');
 mongoose.Promise = global.Promise;
 //Mongoose configuration
 const warehouse_conn = mongoose.createConnection(process.env.MONGODB_WAREHOUSE_URI || 'mongodb://mongo:27017/Warehouse', {}, (err) =>{
-    if (err) console.log('Unable to connect with Warehouse database', err);git
+    if (err) console.log('Unable to connect with Warehouse database', err);
     console.log('Connected to Warehouse database');
 });
 
