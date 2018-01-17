@@ -13,7 +13,7 @@ let ProductSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    warehouse: { type: mongoose.Schema.ObjectId, ref: 'Warehouse'},
+    warehouse: { type: mongoose.Schema.ObjectId, ref: 'Warehouse', required: true},
     provider: {
         type: String,
         required: true,
@@ -24,7 +24,11 @@ let ProductSchema = mongoose.Schema({
         type: Number,
         default: new Date().getTime()
     }
-},{
+},
+    {
+        versionKey: false
+    },
+    {
     usePushEach: true
 });
 

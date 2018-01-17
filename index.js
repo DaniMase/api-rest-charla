@@ -20,7 +20,8 @@ const port = process.env.PORT || 8080;
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'})
 
 
-app.use(morgan('common', {stream: accessLogStream}));
+// app.use(morgan('common', {stream: accessLogStream}));
+app.use(morgan('common'));
 
 app.use(bodyParser.json());
 app.use(products_router);

@@ -33,7 +33,11 @@ let UserSchema = mongoose.Schema({
             required: true
         }
     }]
-},{
+},
+    {
+        versionKey: false
+    },
+    {
     usePushEach: true
 });
 
@@ -74,7 +78,7 @@ UserSchema.statics.findByToken = function (token) {
     var decoded;
 
     try {
-        decoded = jwt.verify(token, process.env.JWT_SECRET);
+        decoded = jwt.verify(token, process.env.JWT_SECRET || "939a4e564cca486794735a46d8a3cf3e");
     } catch (e) {
         return Promise.reject();
     }

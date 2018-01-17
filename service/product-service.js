@@ -1,6 +1,5 @@
 const _ = require('lodash');
 
-// const {Product} = require('../models/products');
 const {Product} = require('../db/products_db_connect');
 const {Warehouse} = require('../db/warehouse_db_connect');
 
