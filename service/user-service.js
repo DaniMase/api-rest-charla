@@ -10,7 +10,7 @@ let insertUser = (req, res) => {
     user.save().then(() => {
         return user.generateAuthToken();
     }).then((token) => {
-        res.header('x-auth', token).send(user);
+        res.status(200).send();
     }).catch((e) => {
         res.status(400).send(e);
     });
